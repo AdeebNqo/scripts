@@ -1,5 +1,0 @@
-libgstphotography-1.0 0 libgstreamer-plugins-bad1.0-0 (>= 1.0.1), libgstreamer-plugins-bad1.0-0 (<< 1.0.2)
-libgstcodecparsers-1.0 0 libgstreamer-plugins-bad1.0-0 (>= 1.0.1), libgstreamer-plugins-bad1.0-0 (<< 1.0.2)
-libgstbasecamerabinsrc-1.0 0 libgstreamer-plugins-bad1.0-0 (>= 1.0.1), libgstreamer-plugins-bad1.0-0 (<< 1.0.2)
-libgstbasevideo-1.0 0 libgstreamer-plugins-bad1.0-0 (>= 1.0.1), libgstreamer-plugins-bad1.0-0 (<< 1.0.2)
-libgstsignalprocessor-1.0 0 libgstreamer-plugins-bad1.0-0 (>= 1.0.1), libgstreamer-plugins-bad1.0-0 (<< 1.0.2)

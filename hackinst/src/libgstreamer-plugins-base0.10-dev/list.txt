@@ -1,1 +1,0 @@
-/usr/share/doc/libgstreamer-plugins-base0.10-dev

@@ -1,2 +1,0 @@
-/var/lib/dpkg/info/phonon-backend-gstreamer:i386.list
-/var/lib/dpkg/info/phonon-backend-gstreamer:i386.md5sums

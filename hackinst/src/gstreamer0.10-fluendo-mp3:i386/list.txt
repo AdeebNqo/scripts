@@ -1,2 +1,0 @@
-/var/lib/dpkg/info/gstreamer0.10-fluendo-mp3:i386.list
-/var/lib/dpkg/info/gstreamer0.10-fluendo-mp3:i386.md5sums

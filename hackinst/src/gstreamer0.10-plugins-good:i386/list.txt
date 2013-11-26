@@ -1,5 +1,0 @@
-/var/lib/dpkg/info/gstreamer0.10-plugins-good:i386.list
-/var/lib/dpkg/info/gstreamer0.10-plugins-good:i386.md5sums
-/var/lib/dpkg/info/gstreamer0.10-plugins-good:i386.postinst
-/var/lib/dpkg/info/gstreamer0.10-plugins-good:i386.postrm
-/var/lib/dpkg/info/gstreamer0.10-plugins-good:i386.shlibs
