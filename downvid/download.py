@@ -1,7 +1,7 @@
 import subprocess
 import tempfile
 import shutil
-
+import sys
 
 from os.path import expanduser
 home = expanduser("~")
@@ -21,7 +21,10 @@ pid = (output.split()[1])
 
 filename = tempfile.NamedTemporaryFile().name
 filename = filename.replace("/tmp","")
+
+
 print("moving file...")
 print("src: "+"/proc/"+pid+"/fd/15")
 print("dest: "+home+"/Videos/"+filename)
+
 shutil.copy("/proc/"+pid+"/fd/15", home+"/Videos/"+filename)

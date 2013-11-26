@@ -1,0 +1,2 @@
+/var/lib/dpkg/info/gstreamer0.10-plugins-ugly:i386.list
+/var/lib/dpkg/info/gstreamer0.10-plugins-ugly:i386.md5sums

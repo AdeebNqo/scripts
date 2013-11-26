@@ -1,0 +1,2 @@
+/var/lib/dpkg/info/gstreamer1.0-plugins-base:i386.list
+/var/lib/dpkg/info/gstreamer1.0-plugins-base:i386.md5sums

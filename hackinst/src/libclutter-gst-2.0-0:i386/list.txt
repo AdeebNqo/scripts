@@ -1,0 +1,6 @@
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.list
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.md5sums
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.postinst
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.postrm
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.shlibs
+/var/lib/dpkg/info/libclutter-gst-2.0-0:i386.symbols

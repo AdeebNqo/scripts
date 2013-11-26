@@ -1,0 +1,5 @@
+/var/lib/dpkg/info/libqgsttools-p1:i386.list
+/var/lib/dpkg/info/libqgsttools-p1:i386.md5sums
+/var/lib/dpkg/info/libqgsttools-p1:i386.postinst
+/var/lib/dpkg/info/libqgsttools-p1:i386.postrm
+/var/lib/dpkg/info/libqgsttools-p1:i386.shlibs

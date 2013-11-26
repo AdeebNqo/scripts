@@ -1,0 +1,2 @@
+/var/lib/dpkg/info/gstreamer0.10-nice:i386.list
+/var/lib/dpkg/info/gstreamer0.10-nice:i386.md5sums
