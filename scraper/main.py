@@ -43,6 +43,7 @@ def main():
 	if (pageone!=None):
 		print('caching pageone.')
 		f = open('saved.pkl','w')
+		saved_data={}
 		saved_data['pageone'] = pageone
 		pickle.dump(saved_data,f)
 		f.close()
