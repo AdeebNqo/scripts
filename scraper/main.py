@@ -37,9 +37,14 @@ def main():
 	#parsing while there's still data pertaining to cape town
 	
 	##Finding the number of available residences
-	lists = pageone_soup.find('div', {'class':'p24_toolBox'})
-	
-	
+	toolbox = pageone_soup.find('div', {'class':'p24_toolBox'})
+	lists = toolbox.findAll('li')
+	for item in lists:
+		if (item != None):
+				spans = item.findAll('span')
+				if (len(spans)==1):
+					num = spans[0]
+					print(num)
 	#
 	# Now saving pageone for future use -- just in case
 	#
