@@ -44,7 +44,15 @@ def main():
 				spans = item.findAll('span')
 				if (len(spans)==1):
 					num = spans[0]
-					print(num)
+					split_nums = num.text.split()
+					last_index = len(split_nums)-1
+					num_per_page =split_nums[last_index-2]
+					num = split_nums[last_index]
+					print('there are '+num+' items, '+num_per_page+' per page')
+	#Finding the list of houses in a page
+	column = pageone_soup.findAll('div',{'class':'col-xs-8'})
+	print(column)
+
 	#
 	# Now saving pageone for future use -- just in case
 	#
@@ -64,6 +72,11 @@ def main():
 #
 def get_page(link):
 	return urllib2.urlopen(link).read()
-
+#
+# Method for reading a single residence listing
+#
+def getRes(url):
+	print('getting res')
+	
 if __name__=="__main__":
 	main()
