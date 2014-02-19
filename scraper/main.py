@@ -21,7 +21,7 @@ def main():
 		pageone = saved_data['pageone']
 		f.close()
 	except IOError:
-		print('Error while loading saved data.\nNothing has been nothing, now acting like nothing happened...\n')
+		print('Error while loading saved data.\nNothing has been done, now acting like nothing happened...\n')
 	except EOFError:
 		print('the cache seems to be empty.')
 		#ToDO: delete the cache file
@@ -31,11 +31,14 @@ def main():
 	#
 	print('Loading proper page one.')
 	if (pageone == None):
-		pageone = get_page("http://www.property24.com/for-sale/cape-town/western-cape/432")
+		pageone = get_page("http://www.property24.com/for-sale/cape-town/western-cape/432")	
 	print('parsing page one html...')
-	parsed_pageone = BeautifulSoup(pageone)
+	pageone_soup = BeautifulSoup(pageone)
 	#parsing while there's still data pertaining to cape town
-	print('supposed to be doing something important here.')
+	
+	##Finding the number of available residences
+	lists = pageone_soup.find('div', {'class':'p24_toolBox'})
+	
 	
 	#
 	# Now saving pageone for future use -- just in case
