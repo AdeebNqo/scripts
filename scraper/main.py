@@ -55,7 +55,9 @@ def main():
 	column.pop()
 	houses_container = column.pop()
 	houses = houses_container.findAll('div',{'class':'p24_panel p24_panelHighlight p24_listingTile js_P24_listingTileContainer'})
-	print(len(houses))
+	for house in houses:
+		house_info = get_house_info(house)
+		print(house_info)
 
 	#
 	# Now saving pageone for future use -- just in case
@@ -77,10 +79,12 @@ def main():
 def get_page(link):
 	return urllib2.urlopen(link).read()
 #
-# Method for reading a single residence listing
+# Method for getting simple info on a house using
+# a p24 ad box thingie
 #
-def getRes(url):
+def get_house_info(housedata):
 	print('getting res')
+	return 'house'
 	
 if __name__=="__main__":
 	main()
