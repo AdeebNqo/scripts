@@ -51,7 +51,10 @@ def main():
 					print('there are '+num+' items, '+num_per_page+' per page')
 	#Finding the list of houses in a page
 	column = pageone_soup.findAll('div',{'class':'col-xs-8'})
-	print(column)
+	column.pop()
+	column.pop()
+	print(column.pop())
+	print(len(column))
 
 	#
 	# Now saving pageone for future use -- just in case
