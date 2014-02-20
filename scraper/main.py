@@ -53,8 +53,9 @@ def main():
 	column = pageone_soup.findAll('div',{'class':'col-xs-8'})
 	column.pop()
 	column.pop()
-	print(column.pop())
-	print(len(column))
+	houses_container = column.pop()
+	houses = houses_container.findAll('div',{'class':'p24_panel p24_panelHighlight p24_listingTile js_P24_listingTileContainer'})
+	print(len(houses))
 
 	#
 	# Now saving pageone for future use -- just in case
