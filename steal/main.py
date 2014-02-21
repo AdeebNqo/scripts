@@ -2,6 +2,7 @@ import sys
 import subprocess
 import time
 import pyinotify
+from pyinotify import *
 
 def run_cmd(cmd):
 	return subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
@@ -21,11 +22,12 @@ sys.stdout.write('Done!\n')
 #------------------------------------------------------
 
 print('Now setting up folder listener...')
-#Method for handling events on folder
-def onFolderEvent(event):
-	print('event detected!')
-	print(dir(event))
+
+class PClose(ProcessEvent):
+        def process_IN_DELETE(self, event):
+            print('deleted')
+
 watchMonitor = pyinotify.WatchManager()
 notifier = pyinotify.Notifier(watchMonitor)
-watchMonitor.add_watch('/proc/'+str(lynda_pid)+'/fd', pyinotify.ALL_EVENTS, proc_fun=onFolderEvent)
+watchMonitor.add_watch('/proc/'+str(lynda_pid)+'/fd', pyinotify.ALL_EVENTS)
 notifier.loop()
