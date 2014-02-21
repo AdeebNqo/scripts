@@ -57,7 +57,7 @@ def main():
 	houses = houses_container.findAll('div',{'class':'p24_panel p24_panelHighlight p24_listingTile js_P24_listingTileContainer'})
 	for house in houses:
 		house_info = get_house_info(house)
-		print(house_info)
+		#print or saved house info here
 
 	#
 	# Now saving pageone for future use -- just in case
@@ -83,7 +83,9 @@ def get_page(link):
 # a p24 ad box thingie
 #
 def get_house_info(housedata):
-	print('getting res')
+	print('------------------------------------')
+	print(housedata)
+	print('------------------------------------\n')
 	return 'house'
 	
 if __name__=="__main__":
