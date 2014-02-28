@@ -14,7 +14,10 @@ public class Main{
 				files.put(lastModified, video);
 			}
 			SortedSet<Date> keys = new TreeSet<Date>(files.keySet());
-			
+			for (Date key : keys){
+				ProcessBuilder pb = new ProcessBuilder("/usr/bin/vlc","--one-instance", files.get(key).getAbsolutePath());
+				pb.start();
+			}
 		}catch(Exception e){
 			e.printStackTrace();
 		}
